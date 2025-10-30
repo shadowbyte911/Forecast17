@@ -1,6 +1,5 @@
 # Forecast17: 1-Month Ahead Weather AI (MAE: **0.31°C**)
 
-> **17-year-old. No degree. 24 years of weather data. 0.31°C monthly forecast.**
 
 ---
 
@@ -53,9 +52,6 @@ No physics. No supercomputers. Just **Python + AI**.
 
 ---
 
-> **Built by a 17-year-old. Open source. No excuses.**
-
----
 
 [![GitHub stars](https://img.shields.io/github/stars/yourusername/forecast17?style=social)](https://github.com/shadowbyte911/Forecast17)
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue)](https://python.org)
