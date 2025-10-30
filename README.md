@@ -57,7 +57,7 @@ No physics. No supercomputers. Just **Python + AI**.
 
 ---
 
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/forecast17?style=social)](https://github.com/yourusername/forecast17)
+[![GitHub stars](https://img.shields.io/github/stars/yourusername/forecast17?style=social)](https://github.com/shadowbyte911/Forecast17)
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
