@@ -5,57 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Forecast17 — 0.31°C Monthly Weather AI</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="assets/favicon.ico" />
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
 </head>
 <body>
   <div class="container">
 
-    <!-- Hero -->
-    <header class="hero">
+    <!-- Header -->
+    <header>
       <h1>Forecast17</h1>
       <p class="tagline">17-year-old. 24 years of data. <strong>0.31°C MAE</strong> for July 2025.</p>
       <p class="subtitle">No degree. No team. Just Python + AI.</p>
-      <a href="#results" class="btn">See Results</a>
+      <a href="#results" class="btn">View Results</a>
     </header>
 
     <!-- Results -->
-    <section id="results" class="section">
+    <section id="results">
       <h2>July 2025 Backtest</h2>
-      <div class="metrics">
-        <div class="metric">
-          <h3>LSTM</h3>
-          <p class="value">0.3111°C</p>
-          <p class="label">MAE</p>
-        </div>
-        <div class="metric">
-          <h3>Weighted Ensemble</h3>
-          <p class="value">0.4155°C</p>
-          <p class="label">MAE</p>
-        </div>
-        <div class="metric">
-          <h3>Stacking Ensemble</h3>
-          <p class="value">0.4760°C</p>
-          <p class="label">MAE</p>
-        </div>
-      </div>
+
+      <table class="metrics">
+        <tr>
+          <th>Model</th>
+          <th>MAE</th>
+          <th>RMSE</th>
+        </tr>
+        <tr>
+          <td><strong>LSTM</strong></td>
+          <td><strong>0.3111°C</strong></td>
+          <td>0.5083°C</td>
+        </tr>
+        <tr>
+          <td>Weighted Ensemble</td>
+          <td>0.4155°C</td>
+          <td>0.6007°C</td>
+        </tr>
+        <tr>
+          <td>Stacking Ensemble</td>
+          <td>0.4760°C</td>
+          <td>0.6453°C</td>
+        </tr>
+        <tr>
+          <td>Dense Network</td>
+          <td>0.5534°C</td>
+          <td>0.7238°C</td>
+        </tr>
+        <tr>
+          <td>XGBoost</td>
+          <td>0.5304°C</td>
+          <td>0.7286°C</td>
+        </tr>
+      </table>
 
       <img src="results/forecast_plot.png" alt="July 2025 Forecast" class="plot" />
 
-      <div class="download">
-        <a href="results/july_hourly_predictions_with_metrics.csv" class="btn secondary" download>
-          Download CSV (720 hours + per-hour errors)
-        </a>
-        <a href="results/sample_data.csv" class="btn secondary" download>
-          Sample Data (100 rows)
-        </a>
+      <div class="downloads">
+        <a href="results/july_hourly_predictions_with_metrics.csv" download class="btn">Download Full CSV</a>
+        <a href="results/sample_data.csv" download class="btn secondary">Sample Data</a>
       </div>
     </section>
 
-
     <!-- Footer -->
     <footer>
-      <p>Made by <strong>[Shadowbyte911]</strong>, 17. Open source results. MIT License.</p>
-      <p><a href="https://github.com/shadowbyte911/forecast17">GitHub</a> • No code. No data. Just proof.</p>
+      <p>Made by <strong>[Your Name]</strong>, 17. Results under MIT License.</p>
+      <p><a href="https://github.com/shadowbyte911/Forecast17">GitHub</a> • No code. No data. Just proof.</p>
     </footer>
 
   </div>
